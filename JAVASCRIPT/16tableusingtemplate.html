@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <button onclick="add(10,20)">Click to Call add</button>
+    <button onclick="table(2)">Click to print table</button>
+    <div id="d1">
+
+    </div>
+    <script>
+        function add(a,b){
+            //template laterals
+            r = `${a} + ${b} = ${a+b}`
+            //for popup alert is used
+            alert(a+b) 
+        }
+        //table function using template laterals
+        function table(n){
+            let d1 = document.getElementById("d1")
+            let st=''
+            for(let i=1;i<=10;i++){
+                console.log(`${n} X ${i} =  ${n*i}`)
+                //br used for separating lines
+               document.write(`${n} X ${i} = ${n*I}<br>`)
+               d1.innerHTML = `${n} X ${i} = ${n*i} <br>`
+               st = st + `${n} X ${i} = ${n*i} <br>`
+            }
+            d1.innerHTML = st 
+        }
+    </script>
+</body>
+</html>

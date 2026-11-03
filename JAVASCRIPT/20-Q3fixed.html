@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <h3>TABLE</h3>
+    <input type="text" id="numberInput" placeholder="Enter the number">
+    <button onclick="generateTable()">CLICK ME</button>
+    <div id="result"></div>
+
+    <script>
+        function generateTable() {
+            let n = document.getElementById("numberInput").value;
+            n = Number(n);
+            if (isNaN(n) || n <= 0) {
+                alert("Please enter a valid positive number");
+                return;
+            } 
+            let st = '';
+            for (let i = 1; i <= 10; i++) {
+                st += `${n} X ${i} = ${n * i} <br>`;
+            }
+            document.getElementById("result").innerHTML = st;
+        }
+    </script>
+</body> 
+</html> 

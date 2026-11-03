@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <script>
+        //use map for new array
+        //MAP mostly used
+      let data = [1,2,3,4,5,6,7,8,9]
+      let result = data.map((n)=>{
+        return n*n
+      })
+      console.log(result)
+
+      //use forEach for addition,modifying etc not returning new array
+      let sum=0
+      let dataforeach = data.forEach((n)=>{
+        sum=sum+n
+      })
+      console.log(sum)
+    </script>
+</body>
+</html>

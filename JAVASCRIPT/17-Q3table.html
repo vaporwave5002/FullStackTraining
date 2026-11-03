@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <button onclick="table(2)">Click to print table</button>
+    <div id="d1">
+
+    </div>
+    <script>
+        //table function using template laterals
+        function table(n){
+            let d1 = document.getElementById("d1")
+            let st=''
+            for(let i=1;i<=10;i++){
+               st = st + `${n} X ${i} = ${n*i} <br>`
+            }
+            d1.innerHTML = st 
+        }
+    </script>
+</body>
+</html>

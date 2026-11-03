@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <button onclick="add(10,20)">Click to Call add</button>
+    <script>
+        function add(a,b){
+            console.log(a+b)
+            //for popup alert is used
+            alert(a+b) 
+        }
+        myfun = add 
+        console.log(myfun(12,3))
+
+        //function expression
+        let mul = function(a,b){
+            return a*b 
+        }
+        console.log(mul(2,5))
+
+    //arrow function 
+    let div = (a,b)=>{
+        return a/b 
+    }
+    console.log(div(12,4))
+    </script>
+</body>
+</html>

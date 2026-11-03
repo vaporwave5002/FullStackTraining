@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <h3>TABLE</h3>
+    <input type="text" id="t1" placeholder="enter the number">
+    <button onclick="text(d1)">CLICK ME</button>
+    <div id="d1">
+
+    </div>
+    <script>
+        function table(n){
+            let d1 = document.getElementById("d1")
+            let n= document.getElementById(t1).value
+            let st=''
+            for(let i=1;i<=10;i++){
+               st = st + `${n} X ${i} = ${n*i} <br>`
+            }
+            d1.innerHTML = st 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JAVASCRIPT</title>
+    <style>
+        h1 {
+            cursor: pointer;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        h1.done {
+            color: green;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>TASK</h1>
+    <h1>buy milk</h1>
+    <h1>buy eggs</h1>
+    <h1>buy bread</h1>
+    <h1>buy cheese</h1>
+
+    <script>
+        document.addEventListener('click', (e) => {
+            if (e.target.tagName === 'H1' && e.target.textContent !== 'TASK') {
+                e.target.classList.toggle('done');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<style>
+    p{
+        color:red;
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <input type="text" id="t1">
+    <button onclick="addTask()">ADD TASK</button>
+    <div id="d1"></div>
+    <script>
+        function addTask(){
+            let parent = document.getElementById('d1')
+            let newChild =  document.createElement('p')
+            deletion.innerHTML = "Delete"
+            deletion.setAttribute("click")
+            newChild.innerHTML = document.getElementById("t1").value
+            newChild.appendChild(deletion)
+            parent.appendChild(newChild)
+            deletion.addEventListener('click',(e)=>
+            e.target.parentElement.remove() 
+            ) 
+        }                                
+    </script>
+</body>
+</html>
+
+

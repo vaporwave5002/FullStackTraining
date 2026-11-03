@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+    <style> 
+        tr:nth-child(even) {
+            background-color: #f2f2f2; 
+        }
+        tr:nth-child(odd) {
+            background-color: #d0f0c0; 
+        }
+    </style>
+</head>
+<body>
+    <button onclick="table(2)">Click to print table</button>
+    <div id="d1"></div>
+    
+    <script>
+        // table function using template literals and generating an HTML table
+        function table(n) {
+            let d1 = document.getElementById("d1");
+            let st = `<table border="1" cellpadding="5" cellspacing="0">`;
+
+            for (let i = 1; i <= 10; i++) {
+                st += `<tr><td>${n} X ${i}</td><td>=</td><td>${n * i}</td></tr>`;
+            }
+
+            st += `</table>`;
+            d1.innerHTML = st;
+        }
+    </script>
+</body>
+</html>
+

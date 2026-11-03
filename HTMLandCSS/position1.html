@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DOCUMENT</title>
+  <style>
+    .container {
+      position: relative; 
+      padding: 30px;
+      width: 600px;
+      height: 400px;
+      border: 2px solid #ccc;
+      margin: 50px auto;
+      background-color: #f0f0f0;
+    }
+    .grid-container div{
+        text-align: center;
+        padding:20px;
+        border : 30px;
+    }
+
+    .box1, .box2, .box3, .box4 {
+      width: 150px;
+      height: 100px;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .box1 {
+      background-color: #ff6f61;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+
+    .box2 {
+      background-color: #6b5b95;
+      /* Default position: static */
+    }
+
+    .box3 {
+      background-color: #88b04b;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .box4 {
+      background-color: #f7cac9;
+      color: black;
+      position: relative;
+      top: 30px;
+      left: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">Fixed (box1)</div>
+    <div class="box2">Static (box2)</div>
+    <div class="box3">Absolute (box3)</div>
+    <div class="box4">Relative (box4)</div>
+  </div>
+</body>
+</html>
